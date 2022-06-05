@@ -11,6 +11,7 @@ class GalleryRoute extends StatefulWidget {
   const GalleryRoute({Key key, this.imagesData, this.index}) : super(key: key);
 
   State<StatefulWidget> createState() {
+    // ignore: todo
     // TODO: implement createState
     return _GalleryPage();
   }

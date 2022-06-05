@@ -9,6 +9,7 @@ import 'package:flutter_friends_love_demo1/common/xl_ui_kit.dart';
 class PartyRoute extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
+    // ignore: todo
     // TODO: implement createState
     return _PartyPage();
   }
@@ -35,6 +36,7 @@ class _PartyPage extends State<PartyRoute> with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
     super.build(context);
+    // ignore: todo
     // TODO: implement build
     print(">>> build...");
     return FutureBuilder(
@@ -130,6 +132,7 @@ class _PartyPage extends State<PartyRoute> with AutomaticKeepAliveClientMixin {
   }
 
   @override
+  // ignore: todo
   // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

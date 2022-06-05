@@ -1,0 +1,4 @@
+
+linter:
+  rules:
+    non_constant_identifier_names: false

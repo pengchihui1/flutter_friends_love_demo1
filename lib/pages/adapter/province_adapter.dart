@@ -1,3 +1,4 @@
+// ignore: implementation_imports
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_picker/Picker.dart';
 
@@ -22,6 +23,7 @@ class ProvinceAdapter<T> extends PickerAdapter<T> {
     if (pickerData != null &&
         pickerData.length > 0 &&
         (data == null || data.length == 0)) {
+      // ignore: deprecated_member_use
       if (data == null) data = new List<PickerItem<T>>();
       if (isArray) {
         _parseArrayPickerDataItem(pickerData, data);
@@ -39,6 +41,7 @@ class ProvinceAdapter<T> extends PickerAdapter<T> {
       List lv = v;
       if (lv.length == 0) continue;
 
+      // ignore: deprecated_member_use
       PickerItem item = new PickerItem<T>(children: List<PickerItem<T>>());
       data.add(item);
 
@@ -69,6 +72,7 @@ class ProvinceAdapter<T> extends PickerAdapter<T> {
         for (int j = 0; j < _mapList.length; j++) {
           var _o = map[_mapList[j]];
           if (_o is List && _o.length > 0) {
+            // ignore: deprecated_member_use
             List<PickerItem> _children = new List<PickerItem<T>>();
             //print('add: ${data.runtimeType.toString()}');
             data.add(
@@ -122,13 +126,13 @@ class ProvinceAdapter<T> extends PickerAdapter<T> {
       return item.text;
     }
     String text = item.value.toString();
-    return makeText(
-        item.text, item.text != null ? null : text.substring(text.indexOf('-') + 1));
+     return  makeText(item.text, item.text != null ? null : text.substring(text.indexOf('-') + 1),null);
   }
 
   @override
   void initSelects() {
     if (picker.selecteds == null || picker.selecteds.length == 0) {
+      // ignore: deprecated_member_use
       if (picker.selecteds == null) picker.selecteds = new List<int>();
       for (int i = 0; i < _maxLevel; i++) picker.selecteds.add(0);
     }

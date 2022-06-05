@@ -137,12 +137,12 @@ class _AppPage extends State<AppRoute> {
   BottomNavigationBarItem _buildBottomNavigationBarItem(
       {String titleName, int index, String selectedIcon, String icon}) {
     return BottomNavigationBarItem(
-        title: new Text(
-          titleName,
-          style: TextStyle(
-              color:
-                  _currentIndex == index ? Colors2.color_1 : Color(0xff999999)),
-        ),
+        // title: new Text(
+        //   titleName,
+        //   style: TextStyle(
+        //       color:
+        //           _currentIndex == index ? Colors2.color_1 : Color(0xff999999)),
+        // ),
         icon: _currentIndex == index
             ? Image.asset(
                 selectedIcon,
@@ -153,6 +153,7 @@ class _AppPage extends State<AppRoute> {
                 icon,
                 width: 24.0,
                 height: 24.0,
-              ));
+              )
+     );
   }
 }

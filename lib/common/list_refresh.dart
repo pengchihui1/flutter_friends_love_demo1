@@ -25,6 +25,7 @@ class _ListRefreshState extends State<ListRefresh> {
   bool _hasMore = true; // 是否还有更多数据可加载
   int _pageIndex = 0; // 页面的索引
   int _pageTotal = 0; // 页面的索引
+  // ignore: deprecated_member_use
   List items = new List();
   ScrollController _scrollController = new ScrollController();
 
@@ -156,6 +157,7 @@ class _ListRefreshState extends State<ListRefresh> {
     return new RefreshIndicator(
       child: ListView.builder(
         itemCount: items.length + 1,
+        // ignore: missing_return
         itemBuilder: (context, index) {
           if (index == 0 && index != items.length) {
             if(widget.headerView is Function){

@@ -18,6 +18,7 @@ class DetailRoute extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
+    // ignore: todo
     // TODO: implement createState
     return _DetailPage();
   }
@@ -30,6 +31,7 @@ class _DetailPage extends State<DetailRoute> {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return Material(
       child: FutureBuilder(

@@ -17,6 +17,7 @@ class _SplashPage extends State<SplashRoute> {
   @override
   void initState() {
     super.initState();
+    // ignore: missing_return
     search("key_global", (value) {
       Map<String, dynamic> map = json.decode(value);
       _globalModel = GlobalModel.fromMap(map);

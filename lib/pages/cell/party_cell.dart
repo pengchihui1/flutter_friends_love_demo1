@@ -12,6 +12,7 @@ class PartyCell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Navigator.pushNamed(context, 'search')
+    // ignore: todo
     // TODO: implement build
     return TouchCallBack(child: _buildContainer(), onPressed: () {
       Navigator.pushNamed(context, 'webview');

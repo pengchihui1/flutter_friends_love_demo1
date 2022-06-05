@@ -40,7 +40,6 @@ class MyApp extends StatelessWidget {
 
   final ThemeData mDefaultTheme = new ThemeData(
     primaryColor: Colors2.color_1,
-    scaffoldBackgroundColor: Colors2.color_5,
-    accentColor: Colors2.color_1,
+    scaffoldBackgroundColor: Colors2.color_5, colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors2.color_1),
   );
 }

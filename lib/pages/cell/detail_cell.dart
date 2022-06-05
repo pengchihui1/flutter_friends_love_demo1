@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:flutter_friends_love_demo1/common/utils.dart';
 import 'package:flutter_friends_love_demo1/config/const_config.dart';
 import 'package:flutter_friends_love_demo1/model/detail_page_model.dart';
 import 'package:flutter_friends_love_demo1/common/string_utils.dart';
 import 'package:flutter_friends_love_demo1/common/date_utils.dart';
 import 'package:flutter_friends_love_demo1/common/touch_callback.dart';
+// ignore: unused_import
 import 'package:flutter_friends_love_demo1/pages/detail_route.dart';
 
 class DetailCell extends StatelessWidget {
@@ -14,10 +16,12 @@ class DetailCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return TouchCallBack(
         child: _buildContainer(context),
         onPressed: () {
+          // ignore: missing_return
           Navigator.push(context, MaterialPageRoute(builder: (context) {
 //            return DetailRoute(id: detailPageModel.id,);
           }));
@@ -128,6 +132,7 @@ class DetailTextCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return Container(
       padding: EdgeInsets.fromLTRB(12.0, 0.0, 12.0, 0.0),
@@ -162,6 +167,7 @@ class DetailTitleCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return Container(
       decoration: BoxDecoration(

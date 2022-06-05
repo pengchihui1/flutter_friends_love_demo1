@@ -15,6 +15,7 @@ class Party_page_model {
   }
 
   static List<Party_page_model> fromMapList(dynamic mapList) {
+    // ignore: deprecated_member_use
     List<Party_page_model> list = new List(mapList.length);
     for (int i = 0; i < mapList.length; i++) {
       list[i] = fromMap(mapList[i]);
@@ -73,6 +74,7 @@ class ResultsListBean {
   }
 
   static List<ResultsListBean> fromMapList(dynamic mapList) {
+    // ignore: deprecated_member_use
     List<ResultsListBean> list = new List(mapList.length);
     for (int i = 0; i < mapList.length; i++) {
       list[i] = fromMap(mapList[i]);

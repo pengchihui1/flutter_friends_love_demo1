@@ -29,6 +29,7 @@ class GlobalModel {
   }
 
   static List<GlobalModel> fromMapList(dynamic mapList) {
+    // ignore: deprecated_member_use
     List<GlobalModel> list = new List(mapList.length);
     for (int i = 0; i < mapList.length; i++) {
       list[i] = fromMap(mapList[i]);

@@ -15,6 +15,7 @@ class MainCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return TouchCallBack(
         child: _buildContainer(context),

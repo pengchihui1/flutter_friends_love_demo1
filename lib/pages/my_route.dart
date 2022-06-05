@@ -5,6 +5,7 @@ import 'package:flutter_friends_love_demo1/config/const_config.dart';
 class MyRoute extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
+    // ignore: todo
     // TODO: implement createState
     return _MyPage();
   }
@@ -95,6 +96,7 @@ class _MyPage extends State<MyRoute> with AutomaticKeepAliveClientMixin {
   }
 
   @override
+  // ignore: todo
   // TODO: implement wantKeepAlive
   bool get wantKeepAlive => true;
 }

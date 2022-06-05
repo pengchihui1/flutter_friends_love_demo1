@@ -1,6 +1,7 @@
 import 'images_model.dart';
 
 class Detail_page_model {
+  // ignore: slash_for_doc_comments
   /**
    * username : "root2"
    * last_login : "2018-07-02T20:55:34.126515+08:00"
@@ -41,16 +42,22 @@ class Detail_page_model {
   String value;
   int type;
   String username;
+  // ignore: non_constant_identifier_names
   String last_login;
+  // ignore: non_constant_identifier_names
   String date_joined;
   String nickname;
   String birthday;
   String gender;
   dynamic nationality;
+  // ignore: non_constant_identifier_names
   String work_area_name;
+  // ignore: non_constant_identifier_names
   String born_area_name;
+  // ignore: non_constant_identifier_names
   String relationship_desc;
   String mate_preference;
+  // ignore: non_constant_identifier_names
   String person_intro;
   String pic1;
   String mobile;
@@ -76,44 +83,45 @@ class Detail_page_model {
   bool hasDivider;
 
   static Detail_page_model fromMap(Map<String, dynamic> map) {
-    Detail_page_model detail_page_model = new Detail_page_model();
-    detail_page_model.username = map['username'];
-    detail_page_model.last_login = map['last_login'];
-    detail_page_model.date_joined = map['date_joined'];
-    detail_page_model.nickname = map['nickname'];
-    detail_page_model.birthday = map['birthday'];
-    detail_page_model.gender = map['gender'];
-    detail_page_model.nationality = map['nationality'];
-    detail_page_model.work_area_name = map['work_area_name'];
-    detail_page_model.born_area_name = map['born_area_name'];
-    detail_page_model.relationship_desc = map['relationship_desc'];
-    detail_page_model.mate_preference = map['mate_preference'];
-    detail_page_model.person_intro = map['person_intro'];
-    detail_page_model.pic1 = map['pic1'];
-    detail_page_model.mobile = map['mobile'];
-    detail_page_model.is_staff = map['is_staff'];
-    detail_page_model.is_active = map['is_active'];
-    detail_page_model.height = map['height'];
-    detail_page_model.weight = map['weight'];
-    detail_page_model.income = map['income'];
-    detail_page_model.marriage_status = map['marriage_status'];
-    detail_page_model.career = map['career'];
-    detail_page_model.brother_state = map['brother_state'];
-    detail_page_model.has_children = map['has_children'];
-    detail_page_model.has_car = map['has_car'];
-    detail_page_model.has_house = map['has_house'];
-    detail_page_model.id = map['id'];
-    detail_page_model.education = map['education'];
-    detail_page_model.black_user = map['black_user'];
-    detail_page_model.member_level = map['member_level'];
-    detail_page_model.constellation = map['constellation'];
-    detail_page_model.parent_work = map['parent_work'];
-    detail_page_model.expect_marry_time = map['expect_marry_time'];
-    detail_page_model.images = ImagesListBean.fromMapList(map['images']);
-    return detail_page_model;
+    Detail_page_model detailPageModel = new Detail_page_model();
+    detailPageModel.username = map['username'];
+    detailPageModel.last_login = map['last_login'];
+    detailPageModel.date_joined = map['date_joined'];
+    detailPageModel.nickname = map['nickname'];
+    detailPageModel.birthday = map['birthday'];
+    detailPageModel.gender = map['gender'];
+    detailPageModel.nationality = map['nationality'];
+    detailPageModel.work_area_name = map['work_area_name'];
+    detailPageModel.born_area_name = map['born_area_name'];
+    detailPageModel.relationship_desc = map['relationship_desc'];
+    detailPageModel.mate_preference = map['mate_preference'];
+    detailPageModel.person_intro = map['person_intro'];
+    detailPageModel.pic1 = map['pic1'];
+    detailPageModel.mobile = map['mobile'];
+    detailPageModel.is_staff = map['is_staff'];
+    detailPageModel.is_active = map['is_active'];
+    detailPageModel.height = map['height'];
+    detailPageModel.weight = map['weight'];
+    detailPageModel.income = map['income'];
+    detailPageModel.marriage_status = map['marriage_status'];
+    detailPageModel.career = map['career'];
+    detailPageModel.brother_state = map['brother_state'];
+    detailPageModel.has_children = map['has_children'];
+    detailPageModel.has_car = map['has_car'];
+    detailPageModel.has_house = map['has_house'];
+    detailPageModel.id = map['id'];
+    detailPageModel.education = map['education'];
+    detailPageModel.black_user = map['black_user'];
+    detailPageModel.member_level = map['member_level'];
+    detailPageModel.constellation = map['constellation'];
+    detailPageModel.parent_work = map['parent_work'];
+    detailPageModel.expect_marry_time = map['expect_marry_time'];
+    detailPageModel.images = ImagesListBean.fromMapList(map['images']);
+    return detailPageModel;
   }
 
   static List<Detail_page_model> fromMapList(dynamic mapList) {
+    // ignore: deprecated_member_use
     List<Detail_page_model> list = new List(mapList.length);
     for (int i = 0; i < mapList.length; i++) {
       list[i] = fromMap(mapList[i]);
